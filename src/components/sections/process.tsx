@@ -6,23 +6,23 @@ import { useRef } from "react";
 const steps = [
     {
         id: 1,
-        title: "Listen & Learn",
-        description: "Understanding your business goals and user needs defines the foundation of every project.",
+        title: "Discovery",
+        description: "We define the core problem. No code is written until the 'Why' is clear.",
     },
     {
         id: 2,
-        title: "Ideate & Sketch",
-        description: "Rapid prototyping and concept visualization to find the optimal direction.",
+        title: "Architecture",
+        description: "I map the database schema and system logic. Scalability is planned, not patched.",
     },
     {
         id: 3,
-        title: "Prototype & Code",
-        description: "Bringing designs to life with pixel-perfect code and robust architecture.",
+        title: "Development",
+        description: "Iterative builds. You see progress every week, not just at the deadline.",
     },
     {
         id: 4,
-        title: "Refine & Deliver",
-        description: "Polishing every detail and aligning the final product with the vision.",
+        title: "Polish & Launch",
+        description: "Rigorous testing, SEO optimization, and final UI detail sweeps.",
     },
 ];
 

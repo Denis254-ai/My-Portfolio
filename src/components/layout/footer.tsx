@@ -2,8 +2,23 @@
 
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaTwitter, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
 export function Footer() {
+    // Basic auto-fill logic using URLSearchParams (run only on client mounting)
+    const [message, setMessage] = useState("");
+
+    useEffect(() => {
+        // Parse the query parameter (manually to avoid Suspense boundary issues with useSearchParams in static export if not careful)
+        if (typeof window !== "undefined") {
+            const params = new URLSearchParams(window.location.search);
+            const service = params.get("service");
+            if (service) {
+                setMessage(`Hi Denis, I am interested in your ${service} package. I need...`);
+            }
+        }
+    }, []);
+
     return (
         <footer className="bg-muted/30 border-t border-border py-12 md:py-24" id="contact">
             <div className="container mx-auto px-4 md:px-6">
@@ -82,6 +97,8 @@ export function Footer() {
                                     <label htmlFor="message" className="text-sm font-medium">Message</label>
                                     <textarea
                                         id="message"
+                                        value={message}
+                                        onChange={(e) => setMessage(e.target.value)}
                                         placeholder="Tell me about your project..."
                                         className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                                     />

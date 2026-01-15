@@ -28,9 +28,10 @@ export function CaseStudies() {
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
+                        className="space-y-4"
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">Case Studies</h2>
-                        <p className="text-muted-foreground">Selected works from 2024-2025</p>
+                        <h2 className="text-4xl md:text-5xl font-bold tracking-tighter">Case Studies</h2>
+                        <p className="text-lg text-muted-foreground font-medium">Selected deployments. Where theory meets reality.</p>
                     </motion.div>
 
                     <Link href="/work" className="hidden md:inline-block text-sm font-medium hover:text-indigo-500 transition-colors underline-offset-4 hover:underline">

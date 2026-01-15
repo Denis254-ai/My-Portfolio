@@ -38,36 +38,33 @@ export function About() {
                     {/* Text Side */}
                     <div className="space-y-8">
                         <motion.h2
-                            initial={{ opacity: 0, x: 20 }}
+                            initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
-                            transition={{ duration: 0.6 }}
+                            transition={{ duration: 0.7, ease: "easeOut" }}
                             className="text-4xl md:text-5xl font-bold tracking-tighter"
                         >
-                            About the Craft
+                            Engineering Logic. <br />
+                            <span className="text-indigo-500">Artistic Intuition.</span>
                         </motion.h2>
 
                         <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
                             <motion.p
-                                initial={{ opacity: 0, y: 10 }}
+                                initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.6, delay: 0.2 }}
                             >
-                                I believe that great design is more than just aesthetics. It's a conversation.
-                                With a background connecting psychology and computer science, I bridge the gap
-                                between human needs and technical possibilities.
+                                I don't just write code; I architect digital ecosystems. With a foundation in Computer Science and a deep obsession with User Psychology, I build products that feel inevitable.
                             </motion.p>
 
                             <motion.p
-                                initial={{ opacity: 0, y: 10 }}
+                                initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.6, delay: 0.4 }}
                             >
-                                Every pixel placed is an opportunity to create joy. Whether it's a subtle interaction
-                                animation or a buttery-smooth landing page, the details matter. They create the
-                                rhythm of connection.
+                                My philosophy is simple: Technical complexity should result in user simplicity. Whether it's a scalable Django backend or a fluid React interface, every line of code is written to serve the human on the other side of the screen.
                             </motion.p>
 
                             <motion.div

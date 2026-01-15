@@ -79,7 +79,7 @@ export function Header() {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: "100%" }}
                         transition={{ type: "spring", damping: 25, stiffness: 200 }}
-                        className="fixed inset-0 z-50 bg-background flex flex-col p-6 md:hidden"
+                        className="fixed inset-0 z-50 bg-white/95 dark:bg-background/95 backdrop-blur-md flex flex-col p-6 md:hidden text-foreground"
                     >
                         <div className="flex items-center justify-between mb-8">
                             <span className="text-xl font-bold">Menu</span>
@@ -117,7 +117,7 @@ export function Header() {
                                 <Link
                                     href="#contact"
                                     onClick={() => setIsOpen(false)}
-                                    className="flex w-full items-center justify-center px-6 py-4 rounded-full bg-primary text-primary-foreground font-bold"
+                                    className="flex w-full items-center justify-center px-6 py-4 rounded-full bg-primary text-primary-foreground font-bold hover:opacity-90 transition-opacity"
                                 >
                                     Let's Talk
                                 </Link>
