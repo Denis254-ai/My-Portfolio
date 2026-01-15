@@ -1,5 +1,6 @@
 "use client";
 
+import { Contact } from "@/components/sections/contact";
 import { Hero } from "@/components/sections/hero";
 import { About } from "@/components/sections/about";
 import { Toolkit } from "@/components/sections/toolkit";
