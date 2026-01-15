@@ -8,6 +8,7 @@ import { CaseStudies } from "@/components/sections/case-studies";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Process } from "@/components/sections/process";
 import { Insights } from "@/components/sections/insights";
+import { Contact } from "@/components/sections/contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Testimonials />
       <Process />
       <Insights />
+      <Contact />
     </div>
   );
 }
